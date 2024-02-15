@@ -1,0 +1,245 @@
+/* Resetting some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+  }
+
+  #app{
+    margin: 0px;
+    padding: 0;
+  }
+  
+  p a {
+    color: #ffffff; /* Set the text color to a blue shade (you can adjust this color) */
+    text-decoration: none; /* Remove underline */
+  
+    font-weight: bold;
+  }
+  
+  p a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #1a1a1a 0%, #333333 100%);
+    z-index: -1;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav img {
+    width: 80px;
+  }
+  
+  nav h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 80vh;
+  }
+  
+  .hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px; /* Adjusted from 56px */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .hero-content p {
+    font-size: 18px; /* Adjusted from 28px */
+    text-align: justify;
+  }
+  
+  
+  
+  .hero-image {
+    flex: 1;
+    margin-top: 20px;
+  }
+  
+  .hero-image p , .hero-image p a{
+    font-size: 14px; /* Adjusted from 18px */
+    
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  #numbers-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .number-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #007bff 0%, #0056b3 100%);
+    color: #fff;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .number-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .number-fact {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .number {
+    text-align: center;
+    font-size: 36px;
+  }
+  
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background: #434141;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    font-size: 18px; /* Adjusted from 24px */
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav img {
+      margin-bottom: 10px;
+    }
+  
+    .hero {
+      height: auto;
+      flex-direction: column-reverse;
+    }
+  
+    .hero-content {
+      padding: 0;
+    }
+  
+    .hero-content h1 {
+      font-size: 24px; /* Adjusted from 36px */
+    }
+  
+    .hero-content p {
+      font-size: 14px; /* Adjusted from 18px */
+    }
+  
+    .hero-image {
+      margin-top: 20px;
+    }
+  
+    .hero-image img {
+      border-radius: 8px;
+    }
+  
+    .hero-image p , .hero-image p a{
+      font-size: 12px; /* Adjusted from 18px */
+      
+    }
+  
+    section {
+      flex-direction: column;
+    }
+  
+    #numbers-container {
+      flex-direction: column;
+    }
+  
+    .number-box {
+      width: 100%;
+    }
+  
+    
+  
+    footer p {
+      font-size: 14px; /* Adjusted from 18px */
+    }
+  }
+  
+  /* Media Query for 1200px (next breakpoint) can be added as needed */
+  
